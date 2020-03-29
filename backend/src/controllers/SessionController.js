@@ -7,7 +7,7 @@ module.exports = {
 
         const {id} = request.body;
 
-        const ong = await connection('incidents')
+        const ong = await connection('ongs')
             .where('id', id)
             .select('name')
             .first();
